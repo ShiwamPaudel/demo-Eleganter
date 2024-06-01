@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleganter - New Amazing Something</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/eleganterlogo.png" class="logo" alt="EleganterLogo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Services &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="#">Service 1</a>
+                            <a href="#">Service 2</a>
+                            <a href="#">Service 3</a>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Eleganter is the Most Elegant HTML5 Template</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corporis provident ipsam deserunt recusandae dolorum dolores mollitia aspernatur cupiditate velit eius reiciendis, impedit quam! Molestias, eaque nobis culpa ipsa quibusdam possimus corrupti rem aspernatur quidem voluptatum?</p>
+            <a href="#" class="btn">Get Started Now</a>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <img src="images/feature1.png" alt="Unlimited Color Variants">
+                <h3>Unlimited Color Variants</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+                <a href="#" class="btn">Get More Info</a>
+            </div>
+            <div class="feature">
+                <a href="https://www.flaticon.com/free-icons/shield" title="shield icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+                        <path d="M32 2L4 10v22c0 14.4 9.2 27 24 31 14.8-4 24-16.6 24-31V10L32 2z" fill="#D1D1D1"/>
+                        <path d="M32 2v2v40.6c-4.2 3.4-6.9 6.7-7 7.4V10L32 2z" fill="#B5B5B5"/>
+                    </svg>
+                </a>
+                <h3>Parallax Background</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+                <a href="#" class="btn">Get More Info</a>
+            </div>
+            <div class="feature">
+                <img src="images/feature3.png" alt="Clean Modern Code">
+                <h3>Clean Modern Code</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+                <a href="#" class="btn">Get More Info</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<style>
+
+    /* ---DropDown Styles for Services--- */
+    nav ul li .dropbtn {
+    cursor: pointer;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #555;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+</style>
