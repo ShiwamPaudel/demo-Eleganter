@@ -6,11 +6,24 @@
     <title>Eleganter - New Amazing Something</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+
+    <!-- Font Playfair and OpenSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="images/eleganterlogo.png" class="logo" alt="EleganterLogo">
+            <!-- <img src="images/eleganterlogo.png" class="logo" alt="EleganterLogo"> -->
+            <img src="images/eleganterlogo.png" class="logo" alt="EleganterLogoLight" id="logo-light">
+            <img src="images/eleganter-logo-dark.png" class="logo logo-dark" alt="EleganterLogoDark" id="logo-dark" style="display: none;">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -62,49 +75,125 @@
         </div>
     </section>
 
+        <!-- About Us Section  -->
+    <div class="about-us">
+        <h1 class="title">About Us</h1>
+        <div class="prags">
+          <p class="first">We Are
+            Web Design Heroes</p>
+          <p class="second">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Mirum est notare quam littera gothica.</p>
+          <p class="third"> Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+        </div>
+      </div>
+    <section class="services-container">
+        <img class="services-img" src="images/aboutusimg.jpeg"/>
+        <div class="services">
+          <div class="service-box">
+            <!-- <i class="fa fa-tint" aria-hidden="true"></i> -->
+            <img src="images/icons/water-drop.png" alt="DropletIcon">
+            <div class="service-desc">
+              <h3>Unlimited Color Variants</h3>
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat. Vel illum dolore eu feugiat nulla
+                facilisis.
+              </p>
+            </div>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <div class="service-desc">
+              <h3>Unlimited Color Variants</h3>
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat. Vel illum dolore eu feugiat nulla
+                facilisis.
+              </p>
+            </div>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <div class="service-desc">
+              <h3>Responsive Layoute</h3>
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat .
+              </p>
+            </div>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            <div class="service-desc">
+              <h3>Clean Minimalistic Design</h3>
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+                Vel illum dolore eu feugiat nulla facilisis. 
+              </p>
+            </div>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          <div class="service-desc">
+            <h3>Tons of Animated Elements</h3>
+            <p>
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+            </p>
+          </div>
+         
+      </section>
 
-    <section class="about-us">
-        <div class="aucontainer">
-            <div class="about-header">
-                <h1>About Us</h1>
-                <div class="underline"></div>
-            
+
+    <!-- Footer-->
+    <footer >
+        <!-- part 1-->
+        <div class="foot-1">
+         <p >Contact Us : 0800787787</p> 
+        </div>
+        <!--part 2-->
+        <div  class="foot-2">
+            <div  class="imap">
+              
+                <iframe src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" title="googlemap" ></iframe>
             </div>
-            <div class="above-column">
-                <div class="firstdiv">We Are Web Design Heroes</div>
-                <div class="seconddiv">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Mirum est notare quam littera gothica.</div>
-                <div class="thirddiv">Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Dolor in hendrerit in vulputate velit esse molestie consequat.</div>
-            </div>
-            <div class="about-content">
+            <div class="info-com">
+                <div>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                 <div class="f-1" style="flex-direction: column;">
+                     <h3> Company Address</h3>
+                 
+                     <p>Responsive Street 7 <br>London / United Kingdom / Europe</p>
+                  </div>
+                </div> 
+                <div> 
+                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                   <div  class="f-2" style="flex-direction: column;">
+                        <h3>E-mail</h3>
+                    
+                        <p>contact@yourdomain.com
+                        <br> office@yourdomain.com</p> 
+                     </div>
+                </div>
+                <div>
+                   <i class="fa fa-phone" aria-hidden="true"></i>
+                   <div class="f-3" style="flex-direction: column;">
+                       <h3>Phone Numbers</h3>
+                   
+                       <p>0800 4521 800 50<br>
+                         0450 5896 625 16 <br>
+                         0798 6546 465 15</p>
+                    </div>
+                </div>
                 
-                <div class="left-column">
-                    <img src="images/aboutusimg.jpeg" alt="Web Design Heroes">
-                </div>
-                <div class="right-column">
-                    <h2>We Are Web Design Heroes</h2>
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Mirum est notare quam littera gothica.</p>
-                    <p>Mirum est notare quam littera gothica. Dolor in hendrerit in vulputate velit esse molestie consequat. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                </div>
-            </div>
-            <div class="aufeatures">
-                <div class="aufeature">
-                    <div class="icon">💧</div>
-                    <h3>Unlimited Color Variants</h3>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                </div>
-                <div class="aufeature">
-                    <div class="icon">📱</div>
-                    <h3>Responsive Layout</h3>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                </div>
-                <div class="aufeature">
-                    <div class="icon">❤️</div>
-                    <h3>Clean Minimalistic Design</h3>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                </div>
+
+
             </div>
         </div>
-    </section>
+        <!--part 3-->
+        <div class="end-f">
+                    <span>copyright2024-Your Domain Name 
+                    <br>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh</span>
+                    <span> Design and Coding</span>
+                </div>
+    </footer>      
 
 </body>
 </html>

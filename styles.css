@@ -1,7 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    /* font-family: "Playfair Display", serif; */
 }
 
 header {
@@ -12,7 +13,10 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.3s;
 }
+
+
 
 /* */
 
@@ -25,6 +29,13 @@ header {
 }
 
 .logo {
+    width: 17%;
+    padding-left: none;
+    
+}
+
+.logo.scrolled {
+    background-image: url('images/eleganter-logo-dark.png');
     width: 17%;
     padding-left: none;
     
@@ -45,6 +56,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a.scrolled {
+    color: black;
 }
 
 .hero {
@@ -79,6 +95,10 @@ nav ul li a {
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 200;
 }
 
 .hero-content p {
@@ -114,16 +134,19 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     /* display: flex; */
-    border: 1px solid black;
+    border: 1px solid grey;
     margin: 1% ;
+    margin-bottom: 100px;
+    margin-top: 50px;
     text-align: center;
     padding:  2%;
 }
+
 .getmoreinfobutton {
     display: inline-block;
     padding: 15px 30px;
     background-color: transparent;
-    border: 2px solid black;
+    border: 1px solid black;
     color: black;
     text-decoration: none;
     font-size: 16px;
@@ -135,111 +158,146 @@ nav ul li a {
     color: white;
 }
 
+
+
 /* styling for third section about us  */
-.aucontainer {
-    width: 80%;
-    /* margin: 0 auto; */
-    /* padding-left: 10px; */
-}
-
 .about-us {
-    /* padding: 50px 0; */
-}
-
-.about-header {
-    text-align: center;
-    position: relative;
-    align-items: center;
+    padding-top: 500px;
     width: 100%;
+    height: 500px;
+  }
+  .about-us .title {
+    margin-top: 100px;
+    display: flex;
     justify-content: center;
-}
-
-.about-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    margin-left: 30%;
-}
-
-
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.left-column {
-    width: 50%;
-}
-
-.left-column img {
+    font-size: 50px;
+  }
+  
+  .about-us .prags {
     width: 100%;
-    margin-left: 0px;
-
-}
-
-
-
-
-.underline{
-    height: 1px;
-    width: 5%;
-    border-top: 1px solid red;
-    margin-left: 62%;
-}
-
-.left-column h2 {
-    font-size: 24px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 100px; */
+    padding-top: 50px;
+  }
+  .about-us .prags .first {
     color: red;
-    margin-bottom: 20px;
-}
+    font-weight: bold;
+    font-size: 30px;
+    width: 200px;
+    margin-right: 20px;
+  }
+  .about-us .prags .second,
+  .about-us .prags .third {
+    width: 400px;
+  }
+  .about-us .prags .third {
+    margin-left: 50px;
+  }
 
-.left-column p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-.right-column {
-    width: 45%;
-}
-
-.right-column img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.firstdiv {
-    display: inline;
-    margin-right: 3%5;
-}
-
-.seconddiv{
-    display: inline;
-}
-
-.aufeatures {
+  
+  .services-container {
     display: flex;
-    justify-content: space-around;
-}
+    
+  }
+  
+  .services-img {
+    width: 50%;
+    object-fit: cover;
+  }
+  
+  .services {
+    width: 50%;
+    flex-direction: column;
+  }
+  
+  .service-box {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .service-box img{
+    width: 2%;
+  }
+  .service-icon {
+    font-size: 50px;
+    margin-right: 10px;
+  }
+  
+  
+  
 
-.aufeature {
+
+
+/* Footer Styling  */
+
+footer {
+    width: 100%;
+  }
+  
+  .foot-1 {
+    height: 65px;
+    background-color: #c81010;
+  }
+  .foot-1 p {
+    font-size: 28.8px;
+    color: white;
+    font-family: "Playfair Display", serif;
     text-align: center;
-    width: 30%;
-}
-
-.aufeature .icon {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.aufeature h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.aufeature p {
-    font-size: 14px;
-    line-height: 1.5;
-}
+  }
+  .imap {
+    width: 50%;
+  }
+  .foot-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  iframe {
+    width: 100%;
+    height: 450px;
+  }
+  .info-com {
+    background-color: #002633;
+    width: 50%;
+    height: 387px;
+    padding: 40px;
+  }
+  .info-com div {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+  }
+  .info-com i {
+    color: #c81010;
+    font-size: 48px;
+    padding-right: 15px;
+    padding-top: 20px;
+  }
+  .info-com p,
+  .info-com h3 {
+    font-size: 13.6px;
+    color: #7697a2;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .f-2 h3,
+  .f-1 h3,
+  .f-3 h3 {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  .end-f {
+    background-color: #002633;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #7697a2;
+    height: 60px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
