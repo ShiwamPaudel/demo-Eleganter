@@ -82,7 +82,7 @@ nav ul li a.scrolled {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.083);
     z-index: 1;
 }
 
@@ -102,15 +102,15 @@ nav ul li a.scrolled {
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 10px 70px;
     background-color: transparent;
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -306,6 +306,7 @@ nav ul li a.scrolled {
 }
 
 .stat-box .stat-number {
+  font-family: "Playfair Display", serif;
   display: block;
   font-size: 40px;
   font-weight: 600;
@@ -400,6 +401,7 @@ nav ul li a.scrolled {
   height: 100vh;
   margin: 0;
   background-color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
 .testimonial-carousel {
@@ -499,6 +501,17 @@ button.next img{
 }
 
 
+
+
+transition: transform 1s ease-in-out;
+}
+
+.scrolling-content.move-right {
+  transform: translateX(100%);
+}
+
+
+
 /* Footer Styling  */
 
 footer {
@@ -569,3 +582,18 @@ footer {
     font-family: "Open Sans", sans-serif;
   }
   
+
+
+  /* premimum feature badge  */
+
+.badge-container {
+    position: relative;
+}
+
+.badge {
+    position: fixed;
+    top: 28%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
