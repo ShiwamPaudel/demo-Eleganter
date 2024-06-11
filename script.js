@@ -43,3 +43,47 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+/* slideshow script js */
+
+document.addEventListener("DOMContentLoaded", function() {
+    const testimonials = document.querySelectorAll(".testimonial");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+    const dots = document.querySelectorAll(".dot");
+    let currentIndex = 0;
+    const intervalTime = 4000; // 4 Seconds Autoslide
+
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.classList.toggle("active", i === index);
+            dots[i].classList.toggle("active", i === index);
+        });
+    }
+
+    function nextTestimonial() {
+        currentIndex = (currentIndex < testimonials.length - 1) ? currentIndex + 1 : 0;
+        showTestimonial(currentIndex);
+    }
+
+    function prevTestimonial() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : testimonials.length - 1;
+        showTestimonial(currentIndex);
+    }
+
+    prevButton.addEventListener("click", prevTestimonial);
+    nextButton.addEventListener("click", nextTestimonial);
+
+    
+    dots.forEach(dot => {
+        dot.addEventListener("click", function() {
+            currentIndex = parseInt(this.getAttribute("data-index"));
+            showTestimonial(currentIndex);
+        });
+    });
+
+    // Auto-slide functionality
+    setInterval(nextTestimonial, intervalTime);
+
+    showTestimonial(currentIndex);
+});
